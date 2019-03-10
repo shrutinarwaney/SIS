@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+/*Navigation bar */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*Content*/
+
+content {
+          text-align: left;
+}
+aside {
+            float: left;
+            margin: 5px;
+}
+aside.right {
+              float: right;
+              margin: 5px;
+}
+
+h2  {
+          text-align: center;
+}
+footer  {
+            text-align: center;
+}
+img   {
+            max-width: 100%;
+}
+span  {
+          display: inline;
+}
+img {
+  border: solid;
+  border-radius: 15px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="index.css">
+<title>Safe Injection Sites</title>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="index.html">Home</a>
+   <a href="overview.html">Overview of SISs</a>
+   <a href="history.html">History of SISs</a>
+   <a href="cr.html">SISs in relation to the CR Movement</a>
+   <a href="sol.html">Solution</a>
+   <a href="citations.html">Citations</a>
+</div>
+
+<div id="main">
+<span id="click" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+	<header>
+      <br>
+  		<h2>Safe Injection Sites</h2>
+  		<p>Overview</p>
+  	</header>
+    <content class="content">
+        <h2>What are Safe Injection Sites (SIS)?</h2>
+      <aside class="aside">
+          <figure>
+                <img src="data:image/jpeg;base64,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" alt="Insite SII in Vancouver" width="300" height="200">
+                <figcaption><b><i>Insite</i> SIS in Vancouver</b></figcaption>
+          </figure>
+      </aside>
+        <section class="section">
+          <article class="article">
+            <p>
+              Safe injection sites, also commonly known as supervised injection sites or supervised consumption services, have been becoming more and 
+              more prevailent in today's society. Our nation's drug problem has never been worse; in 16 states, drug overdoses are the #1 cause 
+              of death. Drug addiction works in such a way that the brain is "rewired" to motivate compulsive behavior towards certain stimuli despite
+              facing consequences. The brain adapts to rely heavily on a drug, and the brain soon needs the drug. If they do not get the drug or they
+              discontinue the use of the drug in the wrong way, they experience severe withdrawl, which is like a worse version of the flu. 
+            </p>
+            <br />
+            <details>
+              <summary class="summary">
+                Safe injection sites have been one of many attempts to combat this problem gripping our nation. 
+              </summary>           
+              They are so new, as highlighted by the <a href="history.html">history</a> tab, so there has not been much feasable evidence concerning 
+              them. They are usually made of different stalls, like a bathroom, so that users may maintain their privacy when taking in a substance,
+              and there usually is a collective area full of clean needles and things like that. Even though people usually die by overdosing when 
+              drugs are concerned, there is also quite a number of deaths arising from infection by unclean needles and other things that could be 
+              easily prevented. 
+            </details>
+            <p>
+            Other methods of fighting this problem have been rehabilitation centers and possibly MAT (Medication Assisted Treatment), but problems arise
+            with both of them. Statistics have shown that 40 to 86% of people in rehabilitation centers who have undergone a complete course of treatment (the majority never complete it) relapse within the first year. MAT consists of using other drugs to combat an addiction by having drugs that
+            mimic the addictive drugs. These are given in lower levels and these drugs have lower potencies to try and have the brain adapt back to not needing drugs. Drugs like these include Methadone. 
+          </p>
+          </article>
+          <h2>In Favor of Safe Injection Sites</h2>
+      <aside class="right">
+          <figure>
+                <img src="data:image/jpeg;base64,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" alt="Statue of Liberty" width="300" height="200">
+                <figcaption><b><i>Cactus</i> SIS in Philly</b></figcaption>
+          </figure>
+      </aside>
+        <section class="section">
+          <article class="article">
+            <details class="details">
+              <summary class="summary">
+                There have been statistics showing that there is the reduction of deaths when you try to prevent death rather than achieve sobriety, and the worth of a human life is great. When keeping a person alive, we can try and find a more reliable cure and get them off their addiction. 
+              </summary>
+              The real problem lies with the stigma in our pop culture that glamorizes drug abuse, so safe injection sites are not enough. Just because this is saving human lives, these lives will then be full of sobriety and relapse because there is no guarentee that a cure will exist in their lifetime.
+            </details>
+            <br />
+            <details class="details">
+              <summary class="summary">
+                By giving these people a safe and private place to do drugs without public eyes, this could protect people from witnessing drug abuse. This could help with raising our youth generation in a drug-free world. This can protect the public from certain unsafe situations, like a person tweaking while under the effects of methamphetamine. 
+              </summary>
+                In our modern culture, people are getting exposed to drugs every day. These ways in our culture glamorize drugs, which already sway the person towards drugs. In rehabilitation centers, a common, effective technique is to show just how ugly drug abuse is by showing actual drug addicts with the rashes on their face, how drastic their situation is because of the constant reliance on the drug, and show how hostile they are. This dissuades the addict by showing what other people percieve them as. 
+            </details>
+            <br />
+            <details class="details">
+              <summary class="summary">
+                By providing the clean needles and other medical supplies, this decreases the spread of diseases like HIV and hepatitis C, which account for a lot of the indirect deaths we see from drug abuse. 
+              </summary>
+                Safe injection sites don't provide one of the major things that, illicitly, have an 86% chance of being unclean: the actual drug. In recent years, fentanyl, which is 50-100x more powerful than heroin and is used to treat severe pain and elephants, has been commonly mixed with other drugs to give them more of a "kick." The worst part is that the illicit forms of most of these drugs is a white grain, so they, for example, mix fentanyl with heroin and call it "heroin," so the person takes as much of this mixture as they would heroin and they end up overdosing. 
+            </details>
+          </article>
+        </section>
+        <br />
+        <br />
+        <br />
+        <br />
+        <h2>Against Safe Injection Sites</h2>
+      <aside class="aside">
+          <figure>
+                <img src="https://img.huffingtonpost.com/asset/5bb299ca2500003200387a71.jpeg?cache=2hps8kcn7w&ops=scalefit_720_noupscale" alt="No Name SII in San Fransisco" width="300" height="200">
+                <figcaption><b>No Name SIS in San Fransisco</b></figcaption>
+          </figure>
+      </aside>
+        <section class="section">
+          <article class="article">
+            <details class="details">
+              <summary class="summary">
+                A safe injection site opening out in a city could encourage more drug addicts to move there. Doing drugs is a federal crime, so the crime rate of the community around it would go up. Also, a lot of people don't feel comfortable about living in the same community with drug addicts. 
+              </summary>
+              Typically, safe injection sites are seperate from the rest of the community, so they won't be interacting with the drugs. Also, ideally, the people shouldn't be addicted anymore, so they won't be addicted anymore. 
+            </details>
+            <br />
+            <details class="details">
+              <summary class="summary">
+                Safe injection sites provide an easy, safe place for people to do drugs, which makes it safe and easy for first-time drugs users to use drugs for the first time. There are no restrictions. 
+              </summary>
+                In newer safe injection sites, there have been drug tests (these are not always reliable) that see if a person actually needs to utilize these services. 
+            </details>
+            <br />
+            <details class="details">
+              <summary class="summary">
+                There is no reliable evidence proving that these reduce drug abuse
+              </summary>
+                Reducing drug abuse is not the goal; the goal is to reduce death and there are statistics from Canada supporting that claim
+            </details>
+          </article>
+      </content>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+   
+</body>
+</html> 

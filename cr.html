@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+/*Navigation bar */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*Content*/
+
+content {
+          text-align: left;
+}
+aside {
+            float: left;
+            margin: 5px;
+}
+aside.right {
+              float: right;
+              margin: 5px;
+}
+
+h2  {
+          text-align: center;
+}
+footer  {
+            text-align: center;
+}
+img   {
+            max-width: 100%;
+}
+span  {
+          display: inline;
+}
+img {
+  border: solid;
+  border-radius: 15px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="index.css">
+<title>Safe Injection Sites</title>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="index.html">Home</a>
+   <a href="overview.html">Overview of SISs</a>
+   <a href="history.html">History of SISs</a>
+   <a href="cr.html">SISs in relation to the CR Movement</a>
+   <a href="sol.html">Solution</a>
+   <a href="citations.html">Citations</a>
+</div>
+
+<div id="main">
+<span id="click" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+	<header>
+      <br>
+  		<h2>Safe Injection Sites</h2>
+  		<p>SISs in Relation to the Civil Rights Movement</p>
+  	</header>
+    <content class="content">
+        <h2>Edward Miller</h2>
+      <aside class="aside">
+          <figure>
+                <img src="http://digitalhumanities.dartmouth.edu/wp-content/uploads/2014/09/Edward_Miller_cropped3-300x225.png" alt="Edward Miller" width="300" height="200">
+                <figcaption><b>SIS Civil Rights Edward Miller</b></figcaption>
+          </figure>
+      </aside>
+        <section class="section">
+          <article class="article">
+            <details>
+              <summary class="summary">
+                 Who is Edward Miller?
+              </summary>           
+               Edward Miller is an Associate Professor of History at the esteemed Dartmouth College. He is known for his expertise of the Vietnam War and he teaches American Foreign Relations. He also is an avid advocate for Safe Injection Sites. 
+            </details>
+            <br />
+            <details>
+              <summary class="summary">
+                 Why is there a need for Civil Rights leaders?
+              </summary>           
+                Just like the Jim Crow laws were discriminatory against people of color, the federal laws concerning drugs are discriminatory against drug addicts (in a much more discreet way). These laws make it so that people don't feel comfortable getting the help that they need, and these laws feed into the misconceptions that addiction is a choice when it is actually a disease. 
+            </details>
+            <br />
+            <details>
+              <summary class="summary">
+                 Characteristics of a good Civil Rights leader:
+              </summary>           
+                <ul>
+                  <li>Contrary to Malcolm X, Edward Miller is not violent (Malcolm X's didn't work)</li>
+                  <li>Like Rosa Parks, Edward Miller protests in nonviolent ways by going to rallies and sometimes planning rallies (this works) </li>
+                  <li>Like MLK, he influences young people by teaching and using his words and facts to gain support (he is a teacher) </li>
+                </ul>
+            </details>
+            <br />
+            <details>
+              <summary class="summary">
+                 Choosing the right environment. Where and when do you protest?
+              </summary>           
+                Similar to the Montgumery Bus Boycott and the Lunch Sit-ins, people protest where the root of the problem is. People protest against SISs outside the SIS or where the SIS will be in the future, and people protest for SISs in these same locations or in neighborhoods and communities with a lot of drugs. They protest before an SIS is built or they protest when an overdose has occured in the community and they want a SIS to prevent this. 
+            </details>
+          </article>
+      </content>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+   
+</body>
+</html> 

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+/*Navigation bar */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*Content*/
+
+content {
+          text-align: left;
+}
+aside {
+            float: left;
+            margin: 5px;
+}
+aside.right {
+              float: right;
+              margin: 5px;
+}
+
+h2  {
+          text-align: center;
+}
+footer  {
+            text-align: center;
+}
+img   {
+            max-width: 100%;
+}
+span  {
+          display: inline;
+}
+img {
+  border: solid;
+  border-radius: 15px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="index.css">
+<title>Safe Injection Sites</title>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="index.html">Home</a>
+   <a href="overview.html">Overview of SISs</a>
+   <a href="history.html">History of SISs</a>
+   <a href="cr.html">SISs in relation to the CR Movement</a>
+   <a href="sol.html">Solution</a>
+   <a href="citations.html">Citations</a>
+</div>
+
+<div id="main">
+<span id="click" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+	<header>
+      <br>
+  		<h2>Safe Injection Sites</h2>
+  		<p>Solutions</p>
+  	</header>
+    <content class="content">
+      <aside class="aside">
+          <figure>
+                <img src="https://ei.marketwatch.com/Multimedia/2016/07/08/Photos/ZH/MW-ER051_drugs__20160708113903_ZH.jpg?uuid=195d21b4-4522-11e6-9fd4-0015c588dfa6" alt="Illicit Drugs Hidden in Capsules" width="300" height="200">
+                <figcaption><b>Illicit Drugs Hidden in Capsules</b></figcaption>
+          </figure>
+      </aside>
+        <section class="section">
+          <article class="article">
+            <details>
+              <summary class="summary">
+                 How can both sides come to a compromise?
+              </summary>           
+               Some ideas for both sides to come to a compromise are:
+               <ul>
+                <li>Improve drug testing to get into the facilities </li>
+                <li>Provide the drugs there to make sure that they are untainted </li>
+                <li>Try and appeal to federal government to loosen restrictions on SISs so that they aren't illegal </li>
+                <li>Put them in neighborhoods and communities where drug abuse is a bigger problem </li>
+              </ul>
+            </details>
+            <br />
+          </article>
+      </content>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+   
+</body>
+</html> 

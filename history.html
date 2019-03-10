@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+/*Navbar starts here */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*Timeline starts here*/
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #8E8E8E;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid black;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent black;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid black;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent black transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+
+.content {
+  padding: 20px 30px;
+  background-color: black;
+  color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+</style>
+<link rel="stylesheet" type="text/css" href="index.css">
+<title>Safe Injection Sites</title>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="index.html">Home</a>
+   <a href="overview.html">Overview of SISs</a>
+   <a href="history.html">History of SISs</a>
+   <a href="cr.html">SISs in relation to the CR Movement</a>
+   <a href="sol.html">Solution</a>
+   <a href="citations.html">Citations</a>
+</div>
+
+<div id="main">
+<span id="click" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+	<header>
+      <br>
+  		<h2>Safe Injection Sites</h2>
+  		<p>History</p>
+  	</header>
+    <div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>1775</h2>
+      <p>Opium gets into the United States</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1910</h2>
+      <p>People in the US start abusing opioid pills for pleasure by crushing pills and inhaling them</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1990</h2>
+      <p>Opioids start getting prescribed at a very rapid rate</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2003</h2>
+      <p>First SIS in North America: Insite in Vancouver, Canada</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2010</h2>
+      <p>FDA tightens regulations regarding opioids, but by this time, countless people are addicted</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2010</h2>
+      <p>Illicit heroin becomes more popular than legal pills</p>
+    </div>
+  </div>
+   <div class="container left">
+    <div class="content">
+      <h2>2017</h2>
+      <p>First SIS in the United States in San Francisco</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+   
+</body>
+</html> 

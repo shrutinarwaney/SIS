@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+header	{
+	background-color: #efefef;
+	color:black;
+	text-align: center;
+	height: 140%;
+}
+
+#click {
+  position: fixed;
+}

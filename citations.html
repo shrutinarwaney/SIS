@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+/*Navigation bar */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*Content*/
+
+content {
+          text-align: left;
+}
+aside {
+            float: left;
+            margin: 5px;
+}
+aside.right {
+              float: right;
+              margin: 5px;
+}
+
+h2  {
+          text-align: center;
+}
+footer  {
+            text-align: center;
+}
+img   {
+            max-width: 100%;
+}
+span  {
+          display: inline;
+}
+img {
+  border: solid;
+  border-radius: 15px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="index.css">
+<title>Safe Injection Sites</title>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="index.html">Home</a>
+   <a href="overview.html">Overview of SISs</a>
+   <a href="history.html">History of SISs</a>
+   <a href="cr.html">SISs in relation to the CR Movement</a>
+   <a href="sol.html">Solution</a>
+   <a href="citations.html">Citations</a>
+</div>
+
+<div id="main">
+<span id="click" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+	<header>
+      <br>
+  		<h2>Safe Injection Sites</h2>
+  		<p>Citations</p>
+  	</header>
+    <content class="content">
+      <aside class="aside">
+      </aside>
+        <section class="section">
+          <article class="article">
+            <p>Allyn, B. (2018, October 08). Philadelphia Plans To Open Medically-Supervised Injection Facility. Retrieved from https://www.npr.org/2018/10/08/655635894/philadelphia-plans-to-open-medically-supervised-injection-facility</p>
+            <br />
+            <p>Glanz, J. M., Narwaney, K. J., Mueller, S. R., Gardner, E. M., Calcaterra, S. L., Xu, S., . . . Binswanger, I. A. (2018). Prediction model for two-year risk of opioid overdose among patients prescribed chronic opioid therapy. Journal of General Internal Medicine, 33(10). https://doi.org/10.1007/s11606-017-4288-3</p>
+            <br />
+            <p>Gonen, Y., & Gonen, Y. (2018, September 18). Feds won't 'stand idly by' while city tests heroin safe zones. Retrieved from https://nypost.com/2018/09/17/feds-wont-stand-idly-by-while-city-tests-heroin-safe-zones/</p>
+            <br />
+            <p>Gordon, E. (2018, September 07). What's The Evidence That Supervised Drug Injection Sites Save Lives? Retrieved from https://www.npr.org/sections/health-shots/2018/09/07/645609248/whats-the-evidence-that-supervised-drug-injection-sites-save-lives</p>
+            <br />
+            <p>Haack, S. (2016, November 3). Opioid withdrawal. Retrieved February 7, 2019, from http://ictp.uw.edu/sites/default/files/Opioid_Withdrawal_Sara_Haack_MD_MPH_11-03-2016.pdf</p>
+            <p>Narwaney, K. (2019, January 26). [Personal interview by the author].</p>
+            <br />
+            <p>Pasternak, G., & Pan, Y.-X. (2013). Mu opioids and their receptors: Evolution of a concept. Pharmacological Reviews. https://doi.org/10.1124/pr.112.007138</p>
+            <br />
+            <p>Sheff, D. (2005, February 6). My addicted son. New York Times. Retrieved from https://www.nytimes.com/2005/02/06/magazine/my-addicted-son.html</p>
+            <br />
+            <p>Sheff, D. (2008). Beautiful boy: A father's journey through his son's addiction. Houghton Mifflin Harcourt.</p>
+            <br />
+            <p>Sheff, D. (2013). Clean: Overcoming addiction and ending America's greatest tragedy. Houghton Mifflin Harcourt.</p>
+            <br />
+            <p>Sheff, N. (2008). Tweak: Growing up on methamphetamines. Thorndike Press.</p>
+            <br />
+            <p>Stoffers, C., & Fernandez, S. M. (2018). The opioid crisis. The opioid crisis, 120(13). Retrieved from MasterFILE Premier database. (Accession No. 129507162)</p>
+            <br />
+            <p>To curb fatal drug overdoses, the U.S. urgently needs safe injection sites. The problem is they're illegal. (2018, July 27). Retrieved from https://www.latimes.com/opinion/op-ed/la-oe-lupick-opioid-epidemic-supervised-injection-sites-20180727-story.html</p>
+            <br />
+            <p>Wein, H. (2018, May 22). How opioid drugs activate receptors. Retrieved February 1, 2019, from https://www.nih.gov/news-events/nih-research-matters/how-opioid-drugs-activate-receptors</p>
+            <br />
+          </article>
+      </content>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+   
+</body>
+</html> 
